@@ -80,6 +80,7 @@ const JobDetails = () => {
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={icons.share} dimension="60%" />
           ),
+          headerTitle: '',
         }}
       />
       <>

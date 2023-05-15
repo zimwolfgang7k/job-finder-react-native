@@ -28,15 +28,15 @@ const useFetch = (endpoint, query) => {
       setIsLoading(false)
     } catch (error) {
       setError(error)
-      Alert('Something went wrong')
+      console.log(error)
     } finally {
       setIsLoading(false)
     }
   }
-  
+
   useEffect(() => {
     fetchData()
-  }, []);
+  }, [])
 
   const refetch = () => {
     setIsLoading(true)
